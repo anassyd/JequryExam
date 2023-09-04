@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black">
+
+
+    <section id="loading" class="justify-content-center align-items-center">
+        <span class="loader"></span>
+    </section>
+
+    <section id="sidebar">
+        <div class="sidebar-inner float-start min-vh-100 p-4 d-flex flex-column justify-content-between">
+            <div class="contact">
+                <span class="sidebar-item mt-4 d-block" data-target="search">Search</span>
+                <span class="sidebar-item mt-4 d-block" data-target="category">Categories</span>
+                <span class="sidebar-item mt-4 d-block" data-target="area">Area</span>
+                <span class="sidebar-item mt-4 d-block" data-target="ingredients">Ingredients</span>
+                <span class="sidebar-item mt-4 d-block" data-target="contact">Contact US</span>
+            </div>
+            <div class="icons-sidebar">
+                <div class="icon-fotter">
+                    <i class="fa-brands fa-facebook bg-transparent"></i>
+                    <i class="fa-brands fa-twitter bg-transparent"></i>
+                    <i class="fa-solid fa-globe bg-transparent"></i>
+                </div>
+                <div class="text-fotter">
+                    Copyright &copy; 2023, <a href="" class="text-decoration-none text-info">Anas Elsayed</a> All rights reserved
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar d-flex justify-content-between flex-column">
+            <img src="imges/logo.png" class="photo mx-auto" alt="">
+            <i class="fa-solid fa-bars fa-2x hide-btn text-black bg-transparent"></i>
+            <i class="fa-solid fa-times fa-2x hide-btn text-black bg-transparent" style="display: none;"></i>
+            
+            <div class="icon">
+                <i class="fa-solid fa-globe d-block text-black bg-transparent"></i>
+                <i class="fa-solid fa-share-nodes text-black bg-transparent"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id='home' class="my-4 section">
+        <div class="container">
+            <div id="meals" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+        </div>
+    </section>
+
+    <section id="search" class="my-4 section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ">
+            <input type="text" class="form-control bg-transparent border-white  " placeholder="Search By Name">
+          </div>
+          <div class="col-md-6 ">
+            <input type="text" class="form-control bg-transparent border-white " placeholder="Search By Frist Latter">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="category" class="my-4 d-none section">
+        <div class="container">
+            <div id="categoryItem" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+        </div>
+    </section>
+
+    <section id="area" class="my-4 d-none section">
+        <div class="container">
+            <div id="areaItem" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+        </div>
+    </section>
+
+    <section id="ingredients" class="my-4 d-none section">
+        <div class="container">
+            <div id="ingredientsItem" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="my-4 d-none section">
+      <div class="container d">
+          <div class="row d-flex justify-content-center align-content-between">
+              <div id="contactUs" class="col-6 gy-4">
+                  <input type="text" class="form-control mb-3" id="exampleInputEmail1" placeholder="Enter Your Name" >
+                  <input type="text" class="form-control mb-3" id="exampleInputEmail2" placeholder="Enter Your Phone" >
+                  <input type="password" class="form-control mb-3" id="exampleInputEmail3" placeholder="Enter Your Password" >
+              </div>
+              <div id="contactUs" class="col-6 gy-4">
+                  <input type="email" class="form-control mb-3" id="exampleInputEmail4" placeholder="Enter Your Email" >
+                  <input type="number" class="form-control mb-3" id="exampleInputEmail5" placeholder="Enter Your Age" >
+                  <input type="password" class="form-control mb-3" id="exampleInputEmail6" placeholder="Repassword" >
+              </div>
+              <div class="text-center">
+                  <button type="button" class="btn btn-danger text-center w-25" id="submitButton">Submit</button>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+ 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
